@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     /**
      * This method is called when the result button is clicked.
      */
@@ -53,12 +54,15 @@ public class MainActivity extends AppCompatActivity {
         displayMessage(resultMessage);
 
     }
-/**  calculates the total result
- * @param checkedAnswerOne check if the right answer in question one is clicked
- * @param checkedRightAnswerTwo check if the right answer in question two is clicked
- *                              @param
- *@return total score
- * */
+
+    /**
+     * calculates the total result
+     *
+     * @param checkedAnswerOne      check if the right answer in question one is clicked
+     * @param checkedRightAnswerTwo check if the right answer in question two is clicked
+     * @param
+     * @return total score
+     */
 
     private int calculateResult(boolean checkedAnswerOne, boolean checkedAnswerThree, boolean checkedAnswerTwo, boolean checkedAnswerFive, boolean checkedRightAnswerOne, boolean checkedRightAnswerTwo, boolean checkedWrongAnswerThree) {
 
@@ -76,33 +80,38 @@ public class MainActivity extends AppCompatActivity {
         if (checkedAnswerFive) {
             score = score + 1;
         }
-        if (checkedRightAnswerOne) {
-            score = score + 1;
-        }else if(checkedWrongAnswerThree){
-            score=score-1;
-        }
-        if (checkedRightAnswerTwo) {
-            score = score + 1;
-        }else if(checkedWrongAnswerThree){
-            score=score-1;
+
+        if (!checkedWrongAnswerThree) {
+            if (checkedRightAnswerOne && checkedRightAnswerTwo) {
+                score = score + 1;
+            }
         }
         if (checkedWrongAnswerThree) {
-            score = score ;
+            score = score;
         }
         return score;
     }
 
 
     /**
+     * should reset the score to 0
+     */
+    public void makeReset(View view) {
+        getResults(view);
+        setResult(score);
+        score = 0;
+    }
+
+    /**
      * create summary of the order
      *
-     * @param score  shows score of the Quiz
+     * @param score     shows score of the Quiz
      * @param typedName shows the typed name of the text field
      * @return text summary
      */
 
     private String createResults(int score, String typedName) {
-        String resultMessage = typedName + ", your score is" + score + "/6 (2 points for question 4)";
+        String resultMessage = typedName + ", your score is" + score + "/5";
 
         return resultMessage;
     }

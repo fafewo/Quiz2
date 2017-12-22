@@ -235,13 +235,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:onClick="getResults"
-            android:paddingBottom="20dp"
+            android:paddingBottom="50dp"
             android:paddingTop="20dp"
             android:text="get results"
 
             />
 
-        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="makeReset"
+            android:paddingBottom="50dp"
+            android:paddingTop="20dp"
+            android:text="reset"/>
 
 
     </LinearLayout>
