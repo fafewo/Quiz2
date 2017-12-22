@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the result button is clicked.
      */
     public void getResults(View view) {
+        score=0;
+
         RadioButton rightAnswerQuestionOne = findViewById(R.id.button1a);
 // Is the button now checked?
         boolean checkedAnswerOne = rightAnswerQuestionOne.isChecked();
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param checkedAnswerOne      check if the right answer in question one is clicked
      * @param checkedRightAnswerTwo check if the right answer in question two is clicked
-     * @param
+     * @param.
      * @return total score
      */
 
@@ -97,9 +99,9 @@ public class MainActivity extends AppCompatActivity {
      * should reset the score to 0
      */
     public void makeReset(View view) {
-        getResults(view);
-        setResult(score);
         score = 0;
+        displayMessage("0 points");
+
     }
 
     /**
