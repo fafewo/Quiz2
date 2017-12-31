@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Quiz</string>
+    <string name="edittext_enter_your_name">please enter your name</string>
+    <string name="describing_text">questions are below</string>
+    <string name="question_one">1)F=?</string>
+    <string name="answer1_question_one">=m*a</string>
+    <string name="answer2_question_one">=R*I</string>
+    <string name="answer3_question_one">=m*L</string>
+    <string name="question_two">2) on the following picture is a ...</string>
+    <string name="answer1_question_two">windmill</string>
+    <string name="answer2_question_two">windturbine</string>
+    <string name="question_three">3) what does \'Vorsicht vor der Lücke\' mean ?</string>
+    <string name="answer1_question_three">watch out</string>
+    <string name="answer2_question_three">mind the gap</string>
+    <string name="answer3_question_three">attention</string>
+    <string name="question_four">4) a good coffee contains:</string>
+    <string name="answer1_question_four">whipped cream</string>
+    <string name="answer2_question_four">chocolate</string>
+    <string name="answer3_question_four">salt</string>
+    <string name="question_five">5) what does \'Schmetterling\' mean?</string>
+    <string name="answer1_question_five">fly</string>
+    <string name="answer2_question_five">bird</string>
+    <string name="answer3_question_five">butterfly</string>
+    <string name="text_results">your results</string>
+    <string name="point_view">0 points</string>
+    <string name="result_button">get results</string>
+    <string name="reset_butto">reset</string>
 </resources>

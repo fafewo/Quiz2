@@ -16,21 +16,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:hint="please enter your name"
+            android:hint="@string/edittext_enter_your_name"
             android:inputType="textCapWords" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="questions are below "
-            android:textSize="20sp"
-            android:textColor="#1a237e"
+            android:text="@string/describing_text"
+            android:textSize="@dimen/size20"
+            android:textColor="@color/leadView_blue"
             />
 
         <TextView
             style="@style/QuestionText"
-            android:text="1)F=?" />
+            android:text="@string/question_one" />
 
 
         <RadioGroup
@@ -45,29 +45,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="20dp"
-                android:text="=m*a"
-                android:textSize="20sp" />
+                android:text="@string/answer1_question_one"
+                android:textSize="@dimen/size20" />
 
             <RadioButton
                 android:id="@+id/button2a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="20dp"
-                android:text="=R*I"
-                android:textSize="20sp" />
+                android:text="@string/answer2_question_one"
+                android:textSize="@dimen/size20" />
 
             <RadioButton
                 android:id="@+id/button3a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="20dp"
-                android:text="=m*L"
-                android:textSize="20sp" />
+                android:text="@string/answer3_question_one"
+                android:textSize="@dimen/size20" />
         </RadioGroup>
 
         <TextView
             style="@style/QuestionText"
-            android:text="2) on the following  picture is  a ..." />
+            android:text="@string/question_two" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -95,22 +95,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:text="windmill"
-                    android:textSize="20sp" />
+                    android:text="@string/answer1_question_two"
+                    android:textSize="@dimen/size20" />
 
                 <RadioButton
                     android:id="@+id/button1x"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="windturbine"
-                    android:textSize="20sp" />
+                    android:text="@string/answer2_question_two"
+                    android:textSize="@dimen/size20" />
             </RadioGroup>
 
         </RelativeLayout>
 
         <TextView
             style="@style/QuestionText"
-            android:text="3) what does 'Vorsicht vor der Lücke' mean ?" />
+            android:text="@string/question_three" />
 
         <RadioGroup
             android:id="@+id/rdGroupB"
@@ -123,29 +123,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="20dp"
-                android:text="watch out"
-                android:textSize="20sp" />
+                android:text="@string/answer1_question_three"
+                android:textSize="@dimen/size20" />
 
             <RadioButton
                 android:id="@+id/button2b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="20dp"
-                android:text="mind the gap"
-                android:textSize="20sp" />
+                android:text="@string/answer2_question_three"
+                android:textSize="@dimen/size20" />
 
             <RadioButton
                 android:id="@+id/button3b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="20dp"
-                android:text="attention"
-                android:textSize="20sp" />
+                android:text="@string/answer3_question_three"
+                android:textSize="@dimen/size20" />
         </RadioGroup>
 
         <TextView
             style="@style/QuestionText"
-            android:text="4) a good coffee contains:" />
+            android:text="@string/question_four" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -157,28 +157,28 @@
                 android:id="@+id/box1_quest4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="whipped cream"
-                android:textSize="20sp" />
+                android:text="@string/answer1_question_four"
+                android:textSize="@dimen/size20" />
 
             <CheckBox
                 android:id="@+id/box2_quest4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="chocolate"
-                android:textSize="20sp" />
+                android:text="@string/answer2_question_four"
+                android:textSize="@dimen/size20" />
 
             <CheckBox
                 android:id="@+id/box3_quest4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:text="salt"
-                android:textSize="20sp" />
+                android:text="@string/answer3_question_four"
+                android:textSize="@dimen/size20" />
         </LinearLayout>
 
         <TextView
             style="@style/QuestionText"
-            android:text="5) what does 'Schmetterling' mean?" />
+            android:text="@string/question_five" />
 
         <RadioGroup
             android:id="@+id/rdGroupC"
@@ -190,22 +190,22 @@
                 android:id="@+id/button1c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="fly"
-                android:textSize="20sp" />
+                android:text="@string/answer1_question_five"
+                android:textSize="@dimen/size20" />
 
             <RadioButton
                 android:id="@+id/button2c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="bird"
-                android:textSize="20sp" />
+                android:text="@string/answer2_question_five"
+                android:textSize="@dimen/size20" />
 
             <RadioButton
                 android:id="@+id/button3c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="butterfly"
-                android:textSize="20sp" />
+                android:text="@string/answer3_question_five"
+                android:textSize="@dimen/size20" />
         </RadioGroup>
 
 
@@ -214,9 +214,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="your results"
-            android:textSize="20sp"
-            android:textColor="#1a237e"
+            android:text="@string/text_results"
+            android:textSize="@dimen/size20"
+            android:textColor="@color/leadView_blue"
             android:textAllCaps="true"
             android:paddingTop="30dp"
             />
@@ -226,9 +226,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="0 points"
-            android:textSize="20sp"
-            android:textColor="#00251a"/>
+            android:text="@string/point_view"
+            android:textSize="@dimen/size20"
+            android:textColor="@color/pointView_dark_green"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -237,7 +237,7 @@
             android:onClick="getResults"
             android:paddingBottom="50dp"
             android:paddingTop="20dp"
-            android:text="get results"
+            android:text="@string/result_button"
 
             />
 
@@ -248,7 +248,7 @@
             android:onClick="makeReset"
             android:paddingBottom="50dp"
             android:paddingTop="20dp"
-            android:text="reset"/>
+            android:text="@string/reset_butto"/>
 
 
     </LinearLayout>
